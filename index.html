@@ -2,6 +2,12 @@
 <html lang="en">
   <head>
     <link href="styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product page</title>
@@ -9,23 +15,125 @@
   <body>
     <header id="header">
       <img
+        class="title-img"
         id="header-img"
         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
       />
       <nav id="nav-bar" position="fixed">
-        <ul>
-          <li><a class="nav-link" href="#video">1</a></li>
-          <li><a class="nav-link" href="#form">2</a></li>
-          <li><a class="nav-link" href="#email">3</a></li>
+        <ul class="ul1">
+          <li><a class="nav-link" href="#F">Features</a></li>
+          <li><a class="nav-link" href="#HIW">How It Works</a></li>
+          <li><a class="nav-link" href="#P">Pricing</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <video class="video" id="video" src="http://www.a.com"></video>
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input id="email" placeholder="av" type="email" name="email" />
-        <input id="submit" type="submit" />
-      </form>
+      <div class="form-box">
+        <h2>Handcrafted, home-made masterpieces</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            id="email"
+            placeholder="Enter your email address"
+            type="email"
+            name="email"
+          />
+          <button id="submit-email" type="submit">GET STARTED</button>
+        </form>
+      </div>
+      <div id="Features">
+        <div class="picto">
+          <i class="fa fa-3x fa-fire"></i>
+        </div>
+        <div class="F-info">
+          <p class="F-title">Premium Materials</p>
+          <p class="F-text">
+            Our trombones use the shiniest brass which is sourced locally. This
+            will increase the longevity of your purchase.
+          </p>
+        </div>
+        <div class="picto">
+          <i class="fa fa-3x fa-truck"></i>
+        </div>
+        <div class="F-info">
+          <p class="F-title">Fast Shipping</p>
+          <p class="F-text">
+            We make sure you recieve your trombone as soon as we have finished
+            making it. We also provide free returns if you are not satisfied.
+          </p>
+        </div>
+        <div class="picto">
+          <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+        </div>
+        <div class="F-info">
+          <p class="F-title">Quality Assurance</p>
+          <p class="F-text">
+            For every purchase you make, we will ensure there are no damages or
+            faults and we will check and test the pitch of your instrument.
+          </p>
+        </div>
+      </div>
+      <div id="HIW">
+        <video
+          class="video"
+          id="HIW"
+          src="https://youtu.be/y8Yv4pnO7qc"
+        ></video>
+      </div>
+      <div class="P">
+        <div class="P-box">
+          <div class="h3">
+            <h3>Tenor Trombone</h3>
+          </div>
+          <div class="P-desc">
+            <p class="cost">$600</p>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum.</p>
+            <button class="select" id="Select-plan-1" type="submit">
+              Select
+            </button>
+          </div>
+        </div>
+        <div class="P-box">
+          <div class="h3">
+            <h3>Bass Trombone</h3>
+          </div>
+          <div class="P-desc">
+            <p class="cost">$900</p>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum.</p>
+            <button class="select" id="Select-plan-2" type="submit">
+              Select
+            </button>
+          </div>
+        </div>
+        <div class="P-box">
+          <div class="h3">
+            <h3>Valve Trombone</h3>
+          </div>
+          <div class="P-desc">
+            <p class="cost">$1200</p>
+            <p>Plays similar to a Trumpet</p>
+            <p>Great for Jazz Bands</p>
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum.</p>
+            <button class="select" id="Select-plan-3" type="submit">
+              Select
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer>
+      <ul class="ul2">
+        <li class="foot-text"><a href="#header">Privacy</a></li>
+        <li class="foot-text"><a href="#header">Terms</a></li>
+        <li class="foot-text"><a href="#header">Contact</a></li>
+      </ul>
+      <p class="copyright">Copyright 2016, Original Trombones</p>
+    </footer>
   </body>
 </html>
